@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         element: <h1>hello</h1>,
       },
       {
-        path: "/country",
+        path: "/:country",
         element: <CountryDetail/>,
       },
     ],
