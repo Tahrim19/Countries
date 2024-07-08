@@ -3,7 +3,7 @@ import { useLocation, useOutletContext, useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import CountryDetailShimmer from './CountryDetailShimmer'
-import '../countryDetail.css'
+import '../css/countryDetail.css'
 
 export default function CountryDetail() {
   const [isDark] = useOutletContext()

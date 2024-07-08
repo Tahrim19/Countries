@@ -1,4 +1,4 @@
-import '../CountriesListShimmer.css'
+import '../css/CountriesListShimmer.css'
 
 export default function CountriesListShimmer() {
   return (

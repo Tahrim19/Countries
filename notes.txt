@@ -11,3 +11,14 @@ useEffect runs after the component renders and can re-run if dependencies change
 Cleanup:
 useState does not involve cleanup logic.
 useEffect can return a cleanup function to clean up resources (e.g., subscriptions, timers) when the component unmounts or before the effect re-runs.
+
+
+Q.) why context api is used?
+Ans: 
+1.)Avoiding Prop Drilling: Prevents the need to pass props through multiple intermediate components.(Important)
+
+2.)Global State Management: Ideal for managing state that needs to be accessed by many components, such as user authentication or theme settings.(Important)
+
+3.)Cleaner Code: Keeps components focused on their specific tasks without concern for prop passing.
+
+4.)Reusability: Facilitates easier reuse of components since they don't need modifications to accept different props. 
