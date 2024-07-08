@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react'
-import { useLocation, useOutletContext, useParams } from 'react-router-dom'
+import { useContext, useEffect, useState } from 'react'
+import { useLocation,useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import CountryDetailShimmer from './CountryDetailShimmer'
 import '../css/countryDetail.css'
+import { ThemeContext } from '../contexts/ThemeContext'
 
 export default function CountryDetail() {
-  const [isDark] = useOutletContext()
+  // const [isDark] = useOutletContext()
+  const [isDark] = useContext(ThemeContext)
   const navigate = useNavigate()
   const params = useParams()
   const countryName = params.country
