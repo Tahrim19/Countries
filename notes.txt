@@ -28,3 +28,6 @@ Ans:
 
 //////////////////////
 
+custom hooks:
+what are hooks? ->
+simply an component udky andr hm dsre resact k hooks use krskty hain
