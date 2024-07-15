@@ -12,7 +12,7 @@ export default function CountriesList({query}) {
   })
 
   const filteredCountries = countries.filter(country =>
-    country.name.common.toLowerCase().includes(query.toLowerCase())
+    country.name.common.toLowerCase().includes(query.toLowerCase()) || country.region.toLowerCase().includes(query.toLowerCase())
   );
 
   if (!countries.length) {
